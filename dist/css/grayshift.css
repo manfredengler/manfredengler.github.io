@@ -17,16 +17,16 @@
   --spacer-3: 1rem;
   --spacer-2: .5rem;
   --spacer-1: .25rem;
-  --blue: hsl(211, 100%, 58%);
+  --blue: hsl(216, 98%, 52%);
   --indigo: hsl(263, 90%, 51%);
   --purple: hsl(261, 51%, 51%);
-  --pink: hsl(332, 79%, 58%);
+  --pink: hsl(330, 67%, 52%);
   --red: hsl(354, 70%, 54%);
   --orange: hsl(27, 98%, 54%);
   --yellow: hsl(45, 100%, 51%);
-  --green: hsl(134, 61%, 45%);
+  --green: hsl(134, 61%, 41%);
   --teal: hsl(162, 73%, 46%);
-  --cyan: hsl(188, 78%, 45%);
+  --cyan: hsl(188, 78%, 41%);
   --white: hsl(0, 0%, 100%);
   --gray: hsl(208, 7%, 46%);
   --black: hsl(210, 11%, 15%);
@@ -40,23 +40,24 @@
   --light-700: hsl(0, 0%, 86%);
   --light-800: hsl(0, 0%, 84%);
   --light-900: hsl(0, 0%, 82%);
-  --dark-100: hsl(0, 0%, 40%);
-  --dark-200: hsl(0, 0%, 38%);
-  --dark-300: hsl(0, 0%, 36%);
-  --dark-400: hsl(0, 0%, 34%);
-  --dark-500: hsl(0, 0%, 32%);
-  --dark-600: hsl(0, 0%, 30%);
-  --dark-700: hsl(0, 0%, 28%);
-  --dark-800: hsl(0, 0%, 26%);
-  --dark-900: hsl(0, 0%, 24%);
+  --dark-100: hsl(240, 8%, 32%);
+  --dark-200: hsl(240, 8%, 30%);
+  --dark-300: hsl(240, 8%, 28%);
+  --dark-400: hsl(240, 8%, 26%);
+  --dark-500: hsl(240, 8%, 24%);
+  --dark-600: hsl(240, 8%, 22%);
+  --dark-700: hsl(240, 8%, 20%);
+  --dark-800: hsl(240, 8%, 18%);
+  --dark-900: hsl(240, 8%, 16%);
   --primary: var(--blue);
   --secondary: var(--gray);
   --success: var(--green);
   --info: var(--cyan);
   --warning: var(--yellow);
   --danger: var(--red);
-  --light: var(--light-600);
-  --dark: var(--dark-100);
+  --light: var(--light-500);
+  --dark: var(--dark-200);
+  --auto: var(--light-500);
   --neutral: var(--light-600);
   --primary-hover: hsl(211, 100%, 50%);
   --secondary-hover: hsl(208, 7%, 38%);
@@ -82,19 +83,21 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --neutral: var(--dark-100);
-    --neutral-hover: var(--dark-200);
-    --body-color: hsla(0, 0%, 100%, .45);
+    --auto: var(--dark-200);
+    --auto-hover: hsl(240, 8%, 29%);
+    --auto-active: var(--dark-300);
+    --body-color: hsl(240, 8%, 60%);
     --headings-color: var(--white);
-    --tab-link-color: var(--white);
+    --link-color: var(--white);
+    --link-hover-color: hsl(0, 0%, 88%);
     --body-bg: var(--dark-700);
     --card-bg: var(--dark-500);
-    --table-accent-bg: var(--dark-400);
-    --fill-bg: var(--dark-300);
-    --fill-active-bg: hsl(0, 0%, 44%);
-    --progress-bg: var(--dark-100);
+    --fill-bg: var(--dark-200);
+    --fill-hover-bg: hsl(240, 8%, 36%);
+    --box-shadow: none;
   }
 }
+
 
 *,
 *::before,
@@ -104,7 +107,7 @@
 
 body {
   margin: 0;
-  font: 500 1rem/1.5 "Inter", sans-serif;
+  font: 500 1rem/1.5 Roboto;
   color: var(--body-color);
   text-align: left;
   -webkit-text-size-adjust: 100%;
@@ -220,7 +223,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family:  "Roboto", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 1em;
 }
 
