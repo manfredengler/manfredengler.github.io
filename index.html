@@ -11,6 +11,7 @@
   <meta name="author" content="Manfred Engler" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://manfredengler.github.io/" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%230d0d0f'/><text x='50' y='68' font-family='system-ui,sans-serif' font-size='52' font-weight='700' fill='%23cc785c' text-anchor='middle'>M</text></svg>" />
 
   <!-- ── Open Graph (LinkedIn, Facebook, WhatsApp) ── -->
   <meta property="og:type" content="profile" />
@@ -63,7 +64,9 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" />
+  <!-- Non-blocking font load: evita render-blocking y mejora FCP/LCP -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" /></noscript>
   <style>
     :root {
       --bg:      #0d0d0f;
@@ -144,6 +147,8 @@
       width: 20px; height: 20px; border-radius: 5px;
       font-size: 10px; font-weight: 700; font-family: var(--mono);
       flex-shrink: 0;
+      /* override colored bg — text color alone da contraste suficiente sobre bg3 */
+      background: var(--bg3) !important;
     }
     nav .nav-footer {
       margin-top: auto;
@@ -294,8 +299,8 @@
     }
     .callout .icon { font-size: 18px; flex-shrink: 0; }
     .callout strong { color: var(--text); }
-    .callout a { color: var(--accent3); text-decoration: none; }
-    .callout a:hover { text-decoration: underline; }
+    .callout a { color: var(--accent3); text-decoration: underline; text-underline-offset: 3px; }
+    .callout a:hover { opacity: .8; }
 
     /* ── STAT ROW ────────────────────────────────── */
     .stat-row { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 20px; }
