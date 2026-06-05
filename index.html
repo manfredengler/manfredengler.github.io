@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Manfred Engler — Backend Developer</title>
-  <meta name="description" content="Portfolio de Manfred Engler. Backend developer, Python, Django, Go. Chile." />
+  <title>Manfred Engler — Líder Técnico en IA</title>
+  <meta name="description" content="Portfolio de Manfred Engler. Líder Técnico en IA, Senior Backend Developer. Python, FastAPI, GCP, Claude, Anthropic SDK. Chile." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" />
@@ -123,243 +123,143 @@
     /* ── HERO ────────────────────────────────────── */
     .hero { margin-bottom: 64px; }
     .hero .eyebrow {
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: .1em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 12px;
+      font-size: 12px; font-weight: 600;
+      letter-spacing: .1em; text-transform: uppercase;
+      color: var(--accent); margin-bottom: 12px;
     }
-    .hero h1 {
-      font-size: 36px;
-      font-weight: 700;
-      line-height: 1.2;
-      margin-bottom: 14px;
-    }
+    .hero h1 { font-size: 36px; font-weight: 700; line-height: 1.2; margin-bottom: 14px; }
     .hero h1 span { color: var(--accent); }
-    .hero p {
-      color: var(--muted);
-      font-size: 15px;
-      line-height: 1.7;
-      max-width: 580px;
-      margin-bottom: 24px;
-    }
+    .hero p { color: var(--muted); font-size: 15px; line-height: 1.7; max-width: 600px; margin-bottom: 24px; }
     .hero-chips { display: flex; flex-wrap: wrap; gap: 8px; }
     .hero-chip {
-      font-size: 12px;
-      font-weight: 500;
-      padding: 4px 12px;
-      border-radius: 20px;
-      border: 1px solid var(--border);
-      color: var(--muted);
+      font-size: 12px; font-weight: 500;
+      padding: 4px 12px; border-radius: 20px;
+      border: 1px solid var(--border); color: var(--muted);
       font-family: var(--mono);
     }
 
     /* ── SECTION ─────────────────────────────────── */
     .section { margin-bottom: 72px; scroll-margin-top: 32px; }
-    .section-header {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      margin-bottom: 24px;
-    }
+    .section-header { display: flex; align-items: center; gap: 14px; margin-bottom: 24px; }
     .badge {
       display: inline-flex; align-items: center; justify-content: center;
       width: 36px; height: 36px; border-radius: 8px;
-      font-size: 13px; font-weight: 700; font-family: var(--mono);
-      flex-shrink: 0;
+      font-size: 13px; font-weight: 700; font-family: var(--mono); flex-shrink: 0;
     }
     .section-header h2 { font-size: 22px; font-weight: 700; }
     .section-header .tag {
-      margin-left: auto;
-      font-size: 11px; font-weight: 600;
+      margin-left: auto; font-size: 11px; font-weight: 600;
       letter-spacing: .06em; text-transform: uppercase;
       padding: 3px 9px; border-radius: 20px;
       border: 1px solid var(--border); color: var(--muted);
     }
-    .section > p {
-      color: var(--muted);
-      font-size: 15px; line-height: 1.7;
-      margin-bottom: 20px;
-    }
+    .section > p { color: var(--muted); font-size: 15px; line-height: 1.7; margin-bottom: 20px; }
 
     /* ── TIMELINE ────────────────────────────────── */
-    .timeline { display: flex; flex-direction: column; gap: 0; }
-    .tl-item {
-      display: flex;
-      gap: 20px;
-      padding-bottom: 32px;
-      position: relative;
-    }
+    .timeline { display: flex; flex-direction: column; }
+    .tl-item { display: flex; gap: 20px; padding-bottom: 28px; }
     .tl-item:last-child { padding-bottom: 0; }
-    .tl-left {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      flex-shrink: 0;
-      width: 36px;
-    }
+    .tl-left { display: flex; flex-direction: column; align-items: center; flex-shrink: 0; width: 36px; }
     .tl-dot {
-      width: 12px; height: 12px;
-      border-radius: 50%;
-      border: 2px solid var(--accent);
-      background: var(--bg);
-      flex-shrink: 0;
-      margin-top: 6px;
-      z-index: 1;
+      width: 12px; height: 12px; border-radius: 50%;
+      border: 2px solid var(--accent); background: var(--bg);
+      flex-shrink: 0; margin-top: 6px; z-index: 1;
     }
     .tl-dot.purple { border-color: var(--accent2); }
     .tl-dot.teal   { border-color: var(--accent3); }
     .tl-dot.green  { border-color: var(--green); }
-    .tl-line {
-      width: 1px;
-      flex: 1;
-      background: var(--border);
-      margin-top: 4px;
-    }
+    .tl-dot.amber  { border-color: var(--amber); }
+    .tl-dot.dim    { border-color: var(--border); }
+    .tl-line { width: 1px; flex: 1; background: var(--border); margin-top: 4px; }
     .tl-item:last-child .tl-line { display: none; }
     .tl-content {
-      flex: 1;
-      background: var(--bg2);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 16px 20px;
-      transition: border-color .15s;
+      flex: 1; background: var(--bg2); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 16px 20px; transition: border-color .15s;
     }
     .tl-content:hover { border-color: #3a3a46; }
-    .tl-top {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 12px;
-      margin-bottom: 6px;
-    }
-    .tl-title {
-      font-size: 15px;
-      font-weight: 700;
-      color: var(--text);
-    }
-    .tl-title a {
-      color: inherit;
-      text-decoration: none;
-      transition: color .15s;
-    }
+    .tl-content.featured { border-color: #cc785c33; }
+    .tl-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 4px; }
+    .tl-title { font-size: 15px; font-weight: 700; color: var(--text); }
+    .tl-title a { color: inherit; text-decoration: none; transition: color .15s; }
     .tl-title a:hover { color: var(--accent3); }
-    .tl-role {
-      font-size: 12px;
-      font-weight: 600;
-      font-family: var(--mono);
-      color: var(--accent);
-      margin-bottom: 4px;
-    }
+    .tl-role { font-size: 12px; font-weight: 600; font-family: var(--mono); color: var(--accent); margin-bottom: 4px; }
     .tl-role.purple { color: var(--accent2); }
     .tl-role.teal   { color: var(--accent3); }
     .tl-role.green  { color: var(--green); }
-    .tl-date {
-      font-size: 11px;
-      font-family: var(--mono);
-      color: var(--muted);
-      white-space: nowrap;
-      flex-shrink: 0;
-    }
-    .tl-desc {
-      font-size: 13.5px;
-      color: var(--muted);
-      line-height: 1.6;
+    .tl-role.amber  { color: var(--amber); }
+    .tl-role.dim    { color: var(--muted); }
+    .tl-date { font-size: 11px; font-family: var(--mono); color: var(--muted); white-space: nowrap; flex-shrink: 0; }
+    .tl-desc { font-size: 13.5px; color: var(--muted); line-height: 1.65; margin-top: 6px; }
+    .tl-desc ul { padding-left: 16px; margin-top: 6px; display: flex; flex-direction: column; gap: 4px; }
+    .tl-stack { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 10px; }
+    .tl-tag {
+      font-family: var(--mono); font-size: 10px; font-weight: 500;
+      padding: 2px 7px; border-radius: 4px;
+      background: var(--bg3); border: 1px solid var(--border); color: var(--muted);
     }
 
     /* ── SKILL GRID ──────────────────────────────── */
-    .skill-group { margin-bottom: 24px; }
+    .skill-group { margin-bottom: 22px; }
     .skill-group-title {
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-      color: var(--muted);
-      margin-bottom: 10px;
+      font-size: 11px; font-weight: 700; letter-spacing: .08em;
+      text-transform: uppercase; color: var(--muted); margin-bottom: 10px;
     }
     .skill-chips { display: flex; flex-wrap: wrap; gap: 8px; }
     .skill-chip {
-      font-family: var(--mono);
-      font-size: 12px;
-      font-weight: 500;
-      padding: 5px 12px;
-      border-radius: 6px;
-      border: 1px solid var(--border);
-      background: var(--bg2);
-      color: var(--muted);
-      transition: all .15s;
+      font-family: var(--mono); font-size: 12px; font-weight: 500;
+      padding: 5px 12px; border-radius: 6px; border: 1px solid var(--border);
+      background: var(--bg2); color: var(--muted); transition: all .15s;
     }
     .skill-chip:hover { color: var(--text); border-color: #3a3a46; background: var(--bg3); }
-    .skill-chip.hi { border-color: #cc785c44; color: #cc785c; background: #cc785c11; }
+    .skill-chip.hi     { border-color: #cc785c44; color: #cc785c; background: #cc785c11; }
     .skill-chip.purple { border-color: #7c6af544; color: #7c6af5; background: #7c6af511; }
-    .skill-chip.teal { border-color: #4ea8a844; color: #4ea8a8; background: #4ea8a811; }
-    .skill-chip.green { border-color: #6ab04c44; color: #6ab04c; background: #6ab04c11; }
+    .skill-chip.teal   { border-color: #4ea8a844; color: #4ea8a8; background: #4ea8a811; }
+    .skill-chip.green  { border-color: #6ab04c44; color: #6ab04c; background: #6ab04c11; }
+    .skill-chip.amber  { border-color: #f0932b44; color: #f0932b; background: #f0932b11; }
 
-    /* ── CONTACT GRID ────────────────────────────── */
-    .contact-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 12px;
-    }
+    /* ── CONTACT ─────────────────────────────────── */
+    .contact-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
     @media (max-width: 580px) { .contact-grid { grid-template-columns: 1fr; } }
     .contact-card {
-      background: var(--bg2);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 16px 20px;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      transition: all .15s;
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 16px 20px;
+      text-decoration: none; display: flex; align-items: center; gap: 12px; transition: all .15s;
     }
     .contact-card:hover { border-color: var(--accent); background: var(--bg3); }
-    .contact-icon {
-      width: 36px; height: 36px; border-radius: 8px;
-      display: flex; align-items: center; justify-content: center;
-      flex-shrink: 0;
-    }
-    .contact-label {
-      font-size: 13px; font-weight: 600; color: var(--text);
-      display: block; margin-bottom: 2px;
-    }
-    .contact-value {
-      font-size: 12px; font-family: var(--mono);
-      color: var(--muted);
-    }
+    .contact-icon { width: 36px; height: 36px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .contact-label { font-size: 13px; font-weight: 600; color: var(--text); display: block; margin-bottom: 2px; }
+    .contact-value { font-size: 12px; font-family: var(--mono); color: var(--muted); }
 
     /* ── CALLOUT ─────────────────────────────────── */
     .callout {
-      display: flex; gap: 12px;
-      padding: 14px 16px;
-      border-radius: var(--radius);
-      border: 1px solid var(--border);
-      font-size: 14px; line-height: 1.6;
-      color: var(--muted);
-      margin-bottom: 20px;
+      display: flex; gap: 12px; padding: 14px 16px;
+      border-radius: var(--radius); border: 1px solid var(--border);
+      font-size: 14px; line-height: 1.6; color: var(--muted); margin-bottom: 16px;
     }
     .callout .icon { font-size: 18px; flex-shrink: 0; }
     .callout strong { color: var(--text); }
+    .callout a { color: var(--accent3); text-decoration: none; }
+    .callout a:hover { text-decoration: underline; }
+
+    /* ── STAT ROW ────────────────────────────────── */
+    .stat-row { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 20px; }
+    .stat-card {
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 14px 18px; flex: 1; min-width: 120px;
+    }
+    .stat-val { font-size: 22px; font-weight: 700; font-family: var(--mono); color: var(--accent); }
+    .stat-label { font-size: 11px; color: var(--muted); margin-top: 2px; }
 
     /* ── DIVIDER ─────────────────────────────────── */
-    .divider {
-      border: none;
-      border-top: 1px solid var(--border);
-      margin: 56px 0;
-    }
+    .divider { border: none; border-top: 1px solid var(--border); margin: 56px 0; }
 
-    /* colors */
     .c1 { background: #cc785c22; color: #cc785c; }
     .c2 { background: #7c6af522; color: #7c6af5; }
     .c3 { background: #4ea8a822; color: #4ea8a8; }
     .c4 { background: #6ab04c22; color: #6ab04c; }
     .c5 { background: #f0932b22; color: #f0932b; }
 
-    @media (max-width: 768px) {
-      nav { display: none; }
-      main { padding: 32px 24px 80px; }
-    }
+    @media (max-width: 768px) { nav { display: none; } main { padding: 32px 24px 80px; } }
   </style>
 </head>
 <body>
@@ -368,7 +268,7 @@
 <nav>
   <div class="logo">
     Manfred Engler
-    <span>backend developer · chile</span>
+    <span>líder técnico en IA · chile</span>
   </div>
   <a href="#sobre-mi" class="active"><span class="num c1">01</span> Sobre mí</a>
   <a href="#experiencia">          <span class="num c2">02</span> Experiencia</a>
@@ -381,7 +281,7 @@
       <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
       GitHub
     </a>
-    <a href="https://linkedin.com/in/manfredengler" target="_blank" rel="noopener">
+    <a href="https://linkedin.com/in/ManfredEngler" target="_blank" rel="noopener">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
       LinkedIn
     </a>
@@ -396,18 +296,18 @@
 <main>
 
   <div class="hero">
-    <div class="eyebrow">Portfolio · Chile</div>
-    <h1>Manfred Engler<br /><span>Backend Developer</span></h1>
+    <div class="eyebrow">Portfolio · Santiago, Chile</div>
+    <h1>Manfred Engler<br /><span>Líder Técnico en IA</span></h1>
     <p>
-      Estudiante de Ingeniería Civil Informática y COO de Shoesing. Me muevo más cómodo en el backend, aunque el frontend me interesa por igual. Python es mi lenguaje de cabecera — por su legibilidad, las buenas prácticas que promueve y el ecosistema de librerías que tiene.
+      Desarrollo software desde hace más de 8 años, con foco en backend, IA generativa y arquitecturas orientadas a datos, eventos y escalables en cloud. Me interesa construir sistemas que funcionen en producción, sean mantenibles y entreguen valor real a las personas que los usan.
     </p>
     <div class="hero-chips">
       <span class="hero-chip">python</span>
-      <span class="hero-chip">go</span>
-      <span class="hero-chip">django</span>
-      <span class="hero-chip">postgresql</span>
-      <span class="hero-chip">docker</span>
-      <span class="hero-chip">linux</span>
+      <span class="hero-chip">fastapi</span>
+      <span class="hero-chip">gcp</span>
+      <span class="hero-chip">claude · anthropic sdk</span>
+      <span class="hero-chip">google adk</span>
+      <span class="hero-chip">n8n</span>
     </div>
   </div>
 
@@ -419,24 +319,43 @@
       <span class="tag">Bio</span>
     </div>
 
-    <div class="callout">
-      <span class="icon">👋</span>
-      <div>
-        <strong>Hola.</strong> Soy Manfred, de Chile. Trabajo principalmente en el backend y ocasionalmente me asomo al frontend. Me interesa construir cosas que funcionen bien, sean legibles y fáciles de mantener.
+    <div class="stat-row">
+      <div class="stat-card">
+        <div class="stat-val">+8</div>
+        <div class="stat-label">años en software</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-val">+2</div>
+        <div class="stat-label">años en IA generativa</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-val">5+</div>
+        <div class="stat-label">empresas · industrias</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-val">2022</div>
+        <div class="stat-label">titulado Ing. Civil Informática</div>
       </div>
     </div>
 
     <div class="callout" style="border-color: #cc785c33;">
       <span class="icon">🤖</span>
       <div>
-        <strong>Agentes de IA:</strong> últimamente dedico tiempo a explorar el ecosistema de agentes — skills para Claude, MCPs, hooks y automatizaciones. Todo eso vive en <a href="https://manfredengler.github.io/agents-stuff/" style="color: var(--accent3); text-decoration: none;">agents-stuff</a>.
+        <strong>Actualmente</strong> lidero una plataforma de Speech Analytics en AFP Capital / SURA — transcripción diarizada, NLP e IA generativa sobre el volumen total de conversaciones del contact center, con resultados disponibles en tiempo cercano a la atención.
       </div>
     </div>
 
     <div class="callout" style="border-color: #7c6af533;">
-      <span class="icon">📖</span>
+      <span class="icon">⚙️</span>
       <div>
-        <strong>Claude Concepts:</strong> escribí una guía de referencia del ecosistema Claude Code — tools, hooks, skills, MCP, agents, harness. Está en <a href="https://manfredengler.github.io/Claude-examples/" style="color: var(--accent2); text-decoration: none;">manfredengler.github.io/Claude-examples</a>.
+        <strong>Aplico</strong> Clean Architecture, SOLID y BDD. Stack Python/FastAPI, TypeScript/Node.js, GCP (Vertex AI, Cloud Run, BigQuery, Firestore, Pub/Sub). Habilito equipos con governance de licencias LLM, skills y agentes.
+      </div>
+    </div>
+
+    <div class="callout" style="border-color: #4ea8a833;">
+      <span class="icon">📦</span>
+      <div>
+        <strong>Proyectos públicos:</strong> <a href="https://manfredengler.github.io/agents-stuff/">agents-stuff</a> — catálogo de skills y agentes reutilizables · <a href="https://manfredengler.github.io/Claude-examples/">Claude Concepts</a> — guía de referencia del ecosistema Claude Code.
       </div>
     </div>
   </section>
@@ -448,60 +367,163 @@
     <div class="section-header">
       <span class="badge c2">02</span>
       <h2>Experiencia</h2>
-      <span class="tag">3 posiciones</span>
+      <span class="tag">8 posiciones</span>
     </div>
 
     <div class="timeline">
+
+      <!-- Zenith · AFP Capital / SURA — Tech Lead AI -->
       <div class="tl-item">
-        <div class="tl-left">
-          <div class="tl-dot"></div>
-          <div class="tl-line"></div>
-        </div>
-        <div class="tl-content">
+        <div class="tl-left"><div class="tl-dot"></div><div class="tl-line"></div></div>
+        <div class="tl-content featured">
           <div class="tl-top">
             <div>
-              <div class="tl-role">Backend Engineer</div>
-              <div class="tl-title"><a href="https://www.cornershopapp.com" target="_blank" rel="noopener">Cornershop by Uber</a></div>
+              <div class="tl-role">Líder Técnico en IA</div>
+              <div class="tl-title">Zenith · AFP Capital / SURA</div>
             </div>
-            <span class="tl-date">06/21 — hoy</span>
+            <span class="tl-date">Dic 2025 — presente</span>
           </div>
-          <p class="tl-desc">Aplicación de compras rápidas y convenientes. Trabajo en el backend del servicio.</p>
+          <div class="tl-desc">
+            <ul>
+              <li>Opero una plataforma de Speech Analytics en producción: transcripción diarizada, NLP e IA generativa sobre arquitectura de microservicios en GCP.</li>
+              <li>Mantengo el Auditor de Atenciones con reportes en tiempo real para los equipos de operaciones.</li>
+              <li>Impulso la adopción de IA en la organización mediante governance de herramientas LLM, habilitación de equipos y sesiones institucionales.</li>
+              <li>Exploro y construyo un catálogo de skills y agentes reutilizables para acelerar ciclos de entrega en equipos técnicos y no técnicos.</li>
+              <li>Progresivamente asumo responsabilidades de apoyo técnico y participación en decisiones de diseño y arquitectura junto a mis colegas.</li>
+            </ul>
+          </div>
+          <div class="tl-stack">
+            <span class="tl-tag">Python</span><span class="tl-tag">FastAPI</span><span class="tl-tag">TypeScript</span><span class="tl-tag">NestJS</span><span class="tl-tag">Angular</span><span class="tl-tag">Claude</span><span class="tl-tag">Gemini</span><span class="tl-tag">Anthropic SDK</span><span class="tl-tag">Google ADK</span><span class="tl-tag">MCP</span><span class="tl-tag">n8n</span><span class="tl-tag">GCP</span><span class="tl-tag">Genesys</span>
+          </div>
         </div>
       </div>
 
+      <!-- Zenith · AFP Capital / SURA — AI Analyst -->
       <div class="tl-item">
-        <div class="tl-left">
-          <div class="tl-dot purple"></div>
-          <div class="tl-line"></div>
-        </div>
+        <div class="tl-left"><div class="tl-dot purple"></div><div class="tl-line"></div></div>
         <div class="tl-content">
           <div class="tl-top">
             <div>
-              <div class="tl-role purple">COO · Full-stack Developer</div>
-              <div class="tl-title"><a href="https://shoesing.cl" target="_blank" rel="noopener">Shoesing</a></div>
+              <div class="tl-role purple">Analista de IA</div>
+              <div class="tl-title">Zenith · AFP Capital / SURA <span style="font-size:11px; color:var(--muted); font-weight:400;">(vía Kibernum)</span></div>
             </div>
-            <span class="tl-date">03/19 — 02/21</span>
+            <span class="tl-date">Jun 2024 — Nov 2025</span>
           </div>
-          <p class="tl-desc">Sitio de comparación de calzado femenino de e-commerce, con inteligencia artificial y web scraping.</p>
+          <div class="tl-desc">
+            <ul>
+              <li>Refactoricé y escalé la plataforma de Speech Analytics hasta alcanzar cobertura productiva sobre el volumen total de conversaciones.</li>
+              <li>Construí el Auditor de Atenciones desde cero: microservicio Genesys, filtros dinámicos en Firestore, APIs con OpenAPI 3.1, tipificación estricta en NestJS y FastAPI.</li>
+              <li>Automaticé el reporte resumen vía n8n con generación HTML y entrega por SendGrid, eliminando la elaboración manual diaria de informes.</li>
+            </ul>
+          </div>
+          <div class="tl-stack">
+            <span class="tl-tag">Python</span><span class="tl-tag">FastAPI</span><span class="tl-tag">TypeScript</span><span class="tl-tag">NestJS</span><span class="tl-tag">n8n</span><span class="tl-tag">Anthropic SDK</span><span class="tl-tag">OpenAPI 3.1</span><span class="tl-tag">GCP</span><span class="tl-tag">Genesys</span><span class="tl-tag">SendGrid</span>
+          </div>
         </div>
       </div>
 
+      <!-- Sabático -->
       <div class="tl-item">
-        <div class="tl-left">
-          <div class="tl-dot teal"></div>
-          <div class="tl-line"></div>
-        </div>
+        <div class="tl-left"><div class="tl-dot dim"></div><div class="tl-line"></div></div>
         <div class="tl-content">
           <div class="tl-top">
             <div>
-              <div class="tl-role teal">Frontend Developer</div>
-              <div class="tl-title"><a href="https://hermesappwebapp.firebaseapp.com/" target="_blank" rel="noopener">Hermes</a></div>
+              <div class="tl-role dim">Sabático técnico</div>
+              <div class="tl-title">Independiente</div>
             </div>
-            <span class="tl-date">05/19 — 03/20</span>
+            <span class="tl-date">Nov 2023 — May 2024</span>
           </div>
-          <p class="tl-desc">Plataforma web de reconocimiento de voz y transcripción automática.</p>
+          <div class="tl-desc">Profundización autodidacta en IA generativa, frontend moderno y arquitecturas multi-agente.</div>
         </div>
       </div>
+
+      <!-- Uber -->
+      <div class="tl-item">
+        <div class="tl-left"><div class="tl-dot teal"></div><div class="tl-line"></div></div>
+        <div class="tl-content">
+          <div class="tl-top">
+            <div>
+              <div class="tl-role teal">Software Engineer</div>
+              <div class="tl-title">Uber <span style="font-size:11px; color:var(--muted); font-weight:400;">· remoto</span></div>
+            </div>
+            <span class="tl-date">Sep 2022 — Oct 2023</span>
+          </div>
+          <div class="tl-desc">
+            <ul>
+              <li>Equipo de performance de catálogo en el área Retailer.</li>
+              <li>Implementé funcionalidades de beneficios de lealtad para Uber Eats a escala global.</li>
+              <li>Flujos de validación y mejora automática de datos de millones de productos.</li>
+              <li>Guardias 24/7 del área.</li>
+            </ul>
+          </div>
+          <div class="tl-stack"><span class="tl-tag">Go</span><span class="tl-tag">RPC</span><span class="tl-tag">monitoring</span></div>
+        </div>
+      </div>
+
+      <!-- Cornershop -->
+      <div class="tl-item">
+        <div class="tl-left"><div class="tl-dot teal"></div><div class="tl-line"></div></div>
+        <div class="tl-content">
+          <div class="tl-top">
+            <div>
+              <div class="tl-role teal">Backend Engineer</div>
+              <div class="tl-title"><a href="https://www.cornershopapp.com" target="_blank" rel="noopener">Cornershop by Uber</a> <span style="font-size:11px; color:var(--muted); font-weight:400;">· remoto</span></div>
+            </div>
+            <span class="tl-date">Jun 2021 — Sep 2022</span>
+          </div>
+          <div class="tl-desc">Motor de liquidaciones que crea millones de órdenes de pago para comerciantes con impuestos y comisiones basadas en contratos y transacciones.</div>
+          <div class="tl-stack"><span class="tl-tag">Python</span><span class="tl-tag">Django</span><span class="tl-tag">PostgreSQL</span></div>
+        </div>
+      </div>
+
+      <!-- Elun SPA -->
+      <div class="tl-item">
+        <div class="tl-left"><div class="tl-dot green"></div><div class="tl-line"></div></div>
+        <div class="tl-content">
+          <div class="tl-top">
+            <div>
+              <div class="tl-role green">Programador Full Stack</div>
+              <div class="tl-title">Elun SPA · Santiago</div>
+            </div>
+            <span class="tl-date">Sep 2020 — Feb 2021</span>
+          </div>
+          <div class="tl-desc">Refactorización y migración a microservicios de las APIs de pago y comandas para Pronto Copec. Integración de catálogo digital con FastAPI y MongoDB.</div>
+          <div class="tl-stack"><span class="tl-tag">Python</span><span class="tl-tag">FastAPI</span><span class="tl-tag">AWS</span><span class="tl-tag">Docker</span><span class="tl-tag">MongoDB</span><span class="tl-tag">Linux</span><span class="tl-tag">CI/CD</span></div>
+        </div>
+      </div>
+
+      <!-- Hermes -->
+      <div class="tl-item">
+        <div class="tl-left"><div class="tl-dot amber"></div><div class="tl-line"></div></div>
+        <div class="tl-content">
+          <div class="tl-top">
+            <div>
+              <div class="tl-role amber">Desarrollador Fullstack</div>
+              <div class="tl-title"><a href="https://hermesappwebapp.firebaseapp.com/" target="_blank" rel="noopener">Hermes Acoustic Intelligence</a></div>
+            </div>
+            <span class="tl-date">May 2019 — Feb 2020</span>
+          </div>
+          <div class="tl-desc">Plataforma web de reconocimiento de voz y transcripción automática.</div>
+          <div class="tl-stack"><span class="tl-tag">Angular Dart</span></div>
+        </div>
+      </div>
+
+      <!-- Shoesing -->
+      <div class="tl-item">
+        <div class="tl-left"><div class="tl-dot amber"></div><div class="tl-line"></div></div>
+        <div class="tl-content">
+          <div class="tl-top">
+            <div>
+              <div class="tl-role amber">Desarrollador Fullstack · Cofundador</div>
+              <div class="tl-title"><a href="https://shoesing.cl" target="_blank" rel="noopener">Shoesing SPA</a></div>
+            </div>
+            <span class="tl-date">Mar 2019 — Feb 2020</span>
+          </div>
+          <div class="tl-desc">Sitio de comparación de calzado femenino con ML para recomendación y búsqueda por imagen, web scraping y servicios de GCP.</div>
+          <div class="tl-stack"><span class="tl-tag">Python</span><span class="tl-tag">Django</span><span class="tl-tag">MongoDB</span><span class="tl-tag">PostgreSQL</span><span class="tl-tag">GCP</span><span class="tl-tag">Machine Learning</span></div>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -516,45 +538,64 @@
     </div>
 
     <div class="timeline">
+
       <div class="tl-item">
-        <div class="tl-left">
-          <div class="tl-dot teal"></div>
-          <div class="tl-line"></div>
-        </div>
+        <div class="tl-left"><div class="tl-dot amber"></div><div class="tl-line"></div></div>
         <div class="tl-content">
           <div class="tl-top">
             <div>
-              <div class="tl-role teal">Ing. Civil Informática</div>
+              <div class="tl-role amber">Inglés intensivo — B1+ → B2</div>
+              <div class="tl-title">ACE English Malta · St. Julian's, Malta</div>
+            </div>
+            <span class="tl-date">Mar 2026 — Jun 2026</span>
+          </div>
+          <div class="tl-desc">Programa inmersivo de 3 meses. En curso.</div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-left"><div class="tl-dot teal"></div><div class="tl-line"></div></div>
+        <div class="tl-content">
+          <div class="tl-top">
+            <div>
+              <div class="tl-role teal">Ingeniería Civil en Informática — Titulado</div>
               <div class="tl-title">PUCV — Pontificia Universidad Católica de Valparaíso</div>
             </div>
-            <span class="tl-date">2017 — presente</span>
+            <span class="tl-date">2022</span>
           </div>
-          <p class="tl-desc">Quinto año. Programa de 6 años.</p>
+          <div class="tl-desc">Tesis: Investigación y aplicación de aprendizaje federado sobre problemas con contexto heterogéneo, replicando y extendiendo modelos de vanguardia.</div>
         </div>
       </div>
 
       <div class="tl-item">
-        <div class="tl-left">
-          <div class="tl-dot"></div>
-          <div class="tl-line"></div>
-        </div>
+        <div class="tl-left"><div class="tl-dot teal"></div><div class="tl-line"></div></div>
         <div class="tl-content">
           <div class="tl-top">
             <div>
-              <div class="tl-role">Ing. Civil Informática</div>
-              <div class="tl-title">UTFSM Casa Central</div>
+              <div class="tl-role teal">Licenciado en Ciencias de la Ingeniería</div>
+              <div class="tl-title">PUCV — Pontificia Universidad Católica de Valparaíso</div>
             </div>
-            <span class="tl-date">2014 — 2016</span>
+            <span class="tl-date">2021</span>
           </div>
-          <p class="tl-desc">2 años. Universidad Técnica Federico Santa María.</p>
         </div>
       </div>
 
       <div class="tl-item">
-        <div class="tl-left">
-          <div class="tl-dot green"></div>
-          <div class="tl-line"></div>
+        <div class="tl-left"><div class="tl-dot dim"></div><div class="tl-line"></div></div>
+        <div class="tl-content">
+          <div class="tl-top">
+            <div>
+              <div class="tl-role dim">Investigación — Paper U-Net</div>
+              <div class="tl-title">PUCV · trabajo de tesis</div>
+            </div>
+            <span class="tl-date">Nov 2019 — Mar 2020</span>
+          </div>
+          <div class="tl-desc">Implementación en Keras y generación del dataset de segmentación de áreas urbanas/rurales.</div>
         </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-left"><div class="tl-dot green"></div><div class="tl-line"></div></div>
         <div class="tl-content">
           <div class="tl-top">
             <div>
@@ -565,6 +606,7 @@
           </div>
         </div>
       </div>
+
     </div>
   </section>
 
@@ -579,52 +621,88 @@
     </div>
 
     <div class="skill-group">
+      <div class="skill-group-title">IA · GenAI</div>
+      <div class="skill-chips">
+        <span class="skill-chip hi">Claude · Anthropic SDK</span>
+        <span class="skill-chip hi">Gemini · Google ADK</span>
+        <span class="skill-chip hi">MCP</span>
+        <span class="skill-chip hi">GitHub Copilot</span>
+        <span class="skill-chip">NLP · transcripción diarizada</span>
+        <span class="skill-chip">multi-agente</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
       <div class="skill-group-title">Backend</div>
       <div class="skill-chips">
         <span class="skill-chip hi">Python</span>
-        <span class="skill-chip hi">Go</span>
+        <span class="skill-chip hi">FastAPI</span>
         <span class="skill-chip hi">Django</span>
-        <span class="skill-chip hi">Flask</span>
-        <span class="skill-chip">Node.js</span>
-        <span class="skill-chip">Express.js</span>
-        <span class="skill-chip">Deno</span>
+        <span class="skill-chip purple">TypeScript</span>
+        <span class="skill-chip purple">NestJS</span>
+        <span class="skill-chip purple">Node.js</span>
+        <span class="skill-chip">Go</span>
         <span class="skill-chip">Bash</span>
       </div>
     </div>
 
     <div class="skill-group">
-      <div class="skill-group-title">Bases de datos</div>
+      <div class="skill-group-title">GCP</div>
       <div class="skill-chips">
-        <span class="skill-chip hi">PostgreSQL</span>
-        <span class="skill-chip hi">MongoDB</span>
+        <span class="skill-chip teal">Vertex AI</span>
+        <span class="skill-chip teal">Cloud Run</span>
+        <span class="skill-chip teal">Cloud Functions</span>
+        <span class="skill-chip teal">BigQuery</span>
+        <span class="skill-chip teal">Firestore</span>
+        <span class="skill-chip teal">Pub/Sub</span>
+        <span class="skill-chip teal">Cloud SQL</span>
+        <span class="skill-chip teal">API Gateway</span>
+        <span class="skill-chip teal">Cloud Scheduler</span>
       </div>
     </div>
 
     <div class="skill-group">
-      <div class="skill-group-title">Frontend</div>
+      <div class="skill-group-title">Datos</div>
       <div class="skill-chips">
-        <span class="skill-chip purple">TypeScript</span>
-        <span class="skill-chip purple">JavaScript</span>
-        <span class="skill-chip purple">Vue.js</span>
-        <span class="skill-chip purple">Nuxt</span>
-        <span class="skill-chip purple">Astro</span>
-        <span class="skill-chip purple">Dart</span>
-        <span class="skill-chip">HTML5</span>
-        <span class="skill-chip">CSS3</span>
-        <span class="skill-chip">Figma</span>
+        <span class="skill-chip teal">PostgreSQL</span>
+        <span class="skill-chip teal">MongoDB</span>
+        <span class="skill-chip teal">BigQuery</span>
+        <span class="skill-chip teal">Firestore</span>
       </div>
     </div>
 
     <div class="skill-group">
-      <div class="skill-group-title">DevOps & infra</div>
+      <div class="skill-group-title">Infra · DevOps</div>
       <div class="skill-chips">
-        <span class="skill-chip teal">Docker</span>
-        <span class="skill-chip teal">Linux</span>
-        <span class="skill-chip teal">Nginx</span>
-        <span class="skill-chip teal">AWS</span>
-        <span class="skill-chip teal">GCP</span>
-        <span class="skill-chip">Git</span>
-        <span class="skill-chip">GitLab</span>
+        <span class="skill-chip green">Docker</span>
+        <span class="skill-chip green">Linux</span>
+        <span class="skill-chip green">Nginx</span>
+        <span class="skill-chip green">AWS</span>
+        <span class="skill-chip green">CI/CD</span>
+        <span class="skill-chip">Git · Gitflow</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <div class="skill-group-title">Herramientas</div>
+      <div class="skill-chips">
+        <span class="skill-chip">n8n</span>
+        <span class="skill-chip">Swagger · OpenAPI 3.1</span>
+        <span class="skill-chip">Genesys</span>
+        <span class="skill-chip">SendGrid</span>
+        <span class="skill-chip">Keras · Scikit-learn</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <div class="skill-group-title">Prácticas</div>
+      <div class="skill-chips">
+        <span class="skill-chip amber">Clean Architecture</span>
+        <span class="skill-chip amber">SOLID</span>
+        <span class="skill-chip amber">BDD · TDD</span>
+        <span class="skill-chip amber">Event-driven</span>
+        <span class="skill-chip amber">Microservicios</span>
+        <span class="skill-chip amber">Scrum</span>
       </div>
     </div>
 
@@ -632,7 +710,7 @@
       <div class="skill-group-title">Idiomas</div>
       <div class="skill-chips">
         <span class="skill-chip green">Español — nativo</span>
-        <span class="skill-chip">Inglés — B2</span>
+        <span class="skill-chip">Inglés — B1+ → B2 (en curso, Malta)</span>
       </div>
     </div>
   </section>
@@ -646,46 +724,58 @@
       <h2>Contacto</h2>
       <span class="tag">Links</span>
     </div>
-    <p>Podés encontrarme en GitHub o LinkedIn.</p>
 
-    <div class="contact-grid">
-      <a class="contact-card" href="https://github.com/manfredengler" target="_blank" rel="noopener">
+    <div class="contact-grid" style="margin-bottom: 32px;">
+      <a class="contact-card" href="https://github.com/ManfredEngler" target="_blank" rel="noopener">
         <div class="contact-icon c1">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
         </div>
         <div>
           <span class="contact-label">GitHub</span>
-          <span class="contact-value">@manfredengler</span>
+          <span class="contact-value">@ManfredEngler</span>
         </div>
       </a>
 
-      <a class="contact-card" href="https://linkedin.com/in/manfredengler" target="_blank" rel="noopener">
+      <a class="contact-card" href="https://linkedin.com/in/ManfredEngler" target="_blank" rel="noopener">
         <div class="contact-icon c2">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
         </div>
         <div>
           <span class="contact-label">LinkedIn</span>
-          <span class="contact-value">manfredengler</span>
+          <span class="contact-value">ManfredEngler</span>
         </div>
       </a>
 
-      <a class="contact-card" href="https://manfredengler.github.io/agents-stuff/" target="_blank" rel="noopener">
+      <a class="contact-card" href="mailto:manfred.engler.95@gmail.com">
         <div class="contact-icon c3">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </div>
+        <div>
+          <span class="contact-label">Email</span>
+          <span class="contact-value">manfred.engler.95@gmail.com</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="skill-group-title" style="margin-bottom: 12px;">Proyectos públicos</div>
+    <div class="contact-grid">
+      <a class="contact-card" href="https://manfredengler.github.io/agents-stuff/" target="_blank" rel="noopener">
+        <div class="contact-icon c1">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
         </div>
         <div>
           <span class="contact-label">agents-stuff</span>
-          <span class="contact-value">catálogo de creaciones</span>
+          <span class="contact-value">catálogo de skills y agentes</span>
         </div>
       </a>
 
       <a class="contact-card" href="https://manfredengler.github.io/Claude-examples/" target="_blank" rel="noopener">
-        <div class="contact-icon c4">
+        <div class="contact-icon c2">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
         </div>
         <div>
           <span class="contact-label">Claude Concepts</span>
-          <span class="contact-value">guía del ecosistema Claude</span>
+          <span class="contact-value">guía del ecosistema Claude Code</span>
         </div>
       </a>
     </div>
@@ -697,7 +787,6 @@
   document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('.section');
     const navLinks = document.querySelectorAll('nav a[href^="#"]');
-
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -707,7 +796,6 @@
         }
       });
     }, { rootMargin: '-30% 0px -60% 0px' });
-
     sections.forEach(s => observer.observe(s));
   });
 </script>
